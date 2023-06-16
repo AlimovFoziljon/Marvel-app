@@ -14,8 +14,8 @@ const CardItem = ({data}) => {
             (data)?(
                 data.map(item=>{
                     return(
-                    <Tooltip title={item.name} arrow>
-                        <Card key={item.id} sx={{ maxWidth: 245 }} onClick={() => navigate(`${item.id}`)}>
+                    <Tooltip key={item.id} title={item.name} arrow>
+                        <Card sx={{ maxWidth: 245 }} onClick={() => navigate(`${item.id}`)}>
                             <CardActionArea>
                                 <CardMedia
                                 component="img"
